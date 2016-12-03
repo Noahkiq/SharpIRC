@@ -85,8 +85,13 @@ namespace SharpIRC
             BackgroundWorker bw)
         {
             string connectServer = loginServer.Text;
+
             string connectChannel = "#" + loginChannel.Text;
+            if (loginChannel.Text.StartsWith("#"))
+                connectChannel = loginChannel.Text; // If input already contains a "#", set connectChannel back to input
+
             string connectNick = loginNickname.Text;
+
             string connectUser = loginUsername.Text;
 
             var client = new IrcClient(connectServer, new IrcUser(connectNick, connectUser));

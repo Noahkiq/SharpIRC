@@ -120,6 +120,7 @@
             this.loginServer.Name = "loginServer";
             this.loginServer.Size = new System.Drawing.Size(100, 20);
             this.loginServer.TabIndex = 7;
+            this.loginServer.Text = "irc.freenode.net";
             // 
             // loginChannel
             // 
@@ -127,6 +128,7 @@
             this.loginChannel.Name = "loginChannel";
             this.loginChannel.Size = new System.Drawing.Size(100, 20);
             this.loginChannel.TabIndex = 8;
+            this.loginChannel.Text = "#freenode";
             // 
             // loginNickname
             // 
@@ -134,6 +136,7 @@
             this.loginNickname.Name = "loginNickname";
             this.loginNickname.Size = new System.Drawing.Size(100, 20);
             this.loginNickname.TabIndex = 9;
+            this.loginNickname.Text = "SharpIRC";
             // 
             // loginUsername
             // 
@@ -141,6 +144,7 @@
             this.loginUsername.Name = "loginUsername";
             this.loginUsername.Size = new System.Drawing.Size(100, 20);
             this.loginUsername.TabIndex = 10;
+            this.loginUsername.Text = "SharpIRC";
             // 
             // loginSubmit
             // 
@@ -162,6 +166,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(781, 342);
             this.Controls.Add(this.loginSubmit);
             this.Controls.Add(this.loginUsername);
